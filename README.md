@@ -45,7 +45,7 @@ position) and reliability (DNF rate) — revealing four strategic profiles.
 ## Setup
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/f1-qualifying-race-prediction.git
+git clone https://github.com/fthanifa/f1-qualifying-race-prediction.git
 cd f1-qualifying-race-prediction
 pip install -r requirements.txt
 ```
