@@ -35,8 +35,11 @@ position) and reliability (DNF rate) — revealing four strategic profiles.
 
 ## Repository Structure
 ├── notebook/          # Main Jupyter notebook
+
 ├── data/              # Data source instructions
+
 ├── outputs/           # Saved visualisations
+
 └── report/            # Full research paper (PDF)
 
 ## Setup
