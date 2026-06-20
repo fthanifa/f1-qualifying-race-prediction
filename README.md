@@ -1,22 +1,22 @@
 # F1 Qualifying Performance as a Race Outcome Predictor
-
 A data mining analysis of Formula One race data (2006–2023) examining 
 whether qualifying position is a reliable predictor of final race outcome.
 
 ## Overview
-
 This project validates and extends the findings of Weissbock & Mills (2025) 
 using three statistical methodologies and proposes a novel analytical framework.
 
 **Key findings:**
 - Spearman's ρ = 0.775 between qualifying position and race finish (p < 0.001, n = 6,005)
-- Contingency Coefficient C = 0.773 across the full dataset
+- Contingency Coefficient C = 0.773 across the full dataset — vs C = 0.63 in 
+  Muehlbauer (2010), a 22.7% improvement using qualifying over grid position
+- OLR model achieves **70.9% classification accuracy** (macro F1 = 0.70) using 
+  qualifying position as the sole predictor — 28.8pp above a naive baseline of 42.1%
 - OLR McFadden R² = 0.34 — qualifying alone explains ~34% of race outcome variance
 - Qualifying is the strongest predictor across all 5 session variables, 
   outperforming practice sessions and race start position
 
 ## Novel Contribution
-
 A **Team Reliability vs. Pace Quadrant Analysis** is proposed to address 
 a key limitation of the original study: DNF events as a confounding variable. 
 Teams are mapped across two independent dimensions — pace (avg qualifying 
@@ -24,8 +24,9 @@ position) and reliability (DNF rate) — revealing four strategic profiles.
 
 ![Quadrant Analysis](outputs/quadrant_analysis.png)
 
-## Methods
+![OLR Confusion Matrix](outputs/olr_confusion_matrix.png)
 
+## Methods
 | Method | Purpose |
 |--------|---------|
 | Contingency Coefficient (C) | Nominal association between qualifying and race position |
