@@ -24,6 +24,12 @@ position) and reliability (DNF rate) — revealing four strategic profiles.
 
 ![Quadrant Analysis](outputs/quadrant_analysis.png)
 
+The OLR model achieves **70.9% accuracy** — 28.8 percentage points above a naive 
+baseline — using qualifying position as the sole input. The confusion matrix below 
+shows predictions are strongest at the extremes (Outside Points and Podium) and 
+fuzziest in the midfield Points zone, which reflects genuine F1 unpredictability 
+rather than model weakness.
+
 ![OLR Confusion Matrix](outputs/olr_confusion_matrix.png)
 
 ## Methods
